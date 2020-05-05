@@ -1,0 +1,11 @@
+heroku_account_email       = "example@domain.com"
+heroku_api_key             = "heroku_api_key_here"
+heroku_pipeline_name       = "terraform-heroku"
+heroku_staging_app         = "terraform-heroku-staging"
+heroku_production_app      = "terraform-heroku-production"
+heroku_region              = "the_region"
+heroku_staging_database    = "heroku-postgresql:hobby-dev"
+heroku_production_database = "heroku-postgresql:hobby-dev"
+heroku_app_buildpacks      = [
+  "heroku/ruby"
+]
