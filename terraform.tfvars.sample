@@ -6,6 +6,7 @@ heroku_production_app      = "terraform-heroku-production"
 heroku_region              = "the_region"
 heroku_staging_database    = "heroku-postgresql:hobby-dev"
 heroku_production_database = "heroku-postgresql:hobby-dev"
+heroku_stack               = "heroku-stack"
 heroku_app_buildpacks      = [
   "heroku/ruby"
 ]
