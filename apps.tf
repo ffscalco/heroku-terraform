@@ -3,7 +3,9 @@ resource "heroku_app" "staging" {
   region = var.heroku_region
 
   config_vars = {
-    APP_ENV = "staging"
+    RAILS_ENV = "staging",
+    ORIGIN_ADDRESSES = var.heroku_staging_origin,
+
   }
 
   buildpacks = var.heroku_app_buildpacks
@@ -14,7 +16,7 @@ resource "heroku_app" "production" {
   region = var.heroku_region
 
   config_vars = {
-    APP_ENV = "production"
+    RAILS_ENV = "production"
   }
 
   buildpacks = var.heroku_app_buildpacks
